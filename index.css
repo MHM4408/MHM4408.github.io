@@ -291,8 +291,78 @@ footer {
   font-size: 0.88rem;
 }
 
+/* Tablet & Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3.5rem 1.25rem 2.5rem;
+  }
+
+  .section {
+    padding: 2.5rem 1.25rem;
+  }
+}
+
 @media (max-width: 600px) {
+  /* Keep navbar links visible and stacked neatly instead of hiding them */
+  .nav-content {
+    flex-direction: column;
+    height: auto;
+    padding: 0.85rem 1rem;
+    gap: 0.65rem;
+  }
+
   nav {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+
+  /* Stack avatar above your name and center the hero on phones */
+  .hero {
+    text-align: center;
+  }
+
+  .hero-title-row {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.85rem;
+  }
+
+  .hero-avatar {
+    width: 105px;
+    height: 105px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Full-width social buttons on mobile */
+  .contact-box {
+    padding: 2rem 1.25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .social-btn {
+    flex: 1 1 calc(50% - 0.5rem);
+    text-align: center;
   }
 }

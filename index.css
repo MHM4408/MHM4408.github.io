@@ -1,0 +1,7 @@
+h1{
+    color: darkblue;
+    text-decoration: underline;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+}

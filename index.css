@@ -87,6 +87,28 @@ nav a:hover {
   font-weight: 600;
   margin-bottom: 1.25rem;
 }
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-title-row h1 {
+  margin-bottom: 0;
+}
+
+.hero-avatar {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.12);
+  border: 2px solid var(--accent);
+  flex-shrink: 0;
+}
 
 h1 {
   font-size: clamp(2.2rem, 5vw, 3.4rem);
